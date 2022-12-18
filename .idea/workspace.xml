@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7c7c666f-0292-4fcb-8df6-7994b88dc441" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671378389511</updated>
-      <workItem from="1671378391787" duration="388000" />
+      <workItem from="1671378391787" duration="6002000" />
     </task>
     <servers />
   </component>
@@ -58,7 +61,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="origin/rsschool-cv-html" />
                       </list>
                     </value>
                   </entry>

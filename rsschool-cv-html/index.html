@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.scc">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a>Skills</a></li>
+            <li><a>Projects</a></li>
+            <li><a>Experience</a></li>
+            <li><a>Language</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <!--    about-->
+    <section>
+        <h1>Valeriia Doronina</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda deserunt distinctio eius
+            eveniet expedita molestiae nemo nisi non provident. Consectetur distinctio eos facere harum illo, molestiae
+            nihil rerum voluptas!</p>
+    </section>
+    <!--    skills-->
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git</li>
+            <li>BEM</li>
+        </ul>
+    </section>
+    <!--    exemple-->
+    <section>
+        <h2>Code exemple</h2>
+        <code>
+            <pre>
+  <code>
+        function decode(expr) {
+          const splitedExpr = expr.split('');
+          let stash = [];
+          let result = [];
+
+          function recursion(startIndex, endIndex) {
+            stash = [];
+
+            if (startIndex === expr.length) return;
+
+            for (let i = startIndex; i &lt; endIndex; i = i + 2) {
+              if (splitedExpr[i] + splitedExpr[i + 1] === '10') stash.push('.');
+
+              if (splitedExpr[i] + splitedExpr[i + 1] === '11') stash.push('-');
+
+              if (splitedExpr[i] === '*') {
+                result.push(' ');
+                return recursion(startIndex + 10, endIndex + 10);
+              }
+            }
+
+            for (key in MORSE_TABLE) {
+              if (key === stash.join('')) {
+                result.push(MORSE_TABLE[key]);
+              }
+            }
+            recursion(startIndex + 10, endIndex + 10);
+          }
+
+          recursion(0, 10);
+
+          return result.join('');
+        }
+  </code>
+            </pre>
+    </section>
+    <!--    contacts-->
+    <section>
+        <h2>Contacts</h2>
+        <ul>
+            <li><a href="tel:+37533540808">+375333540808</a></li>
+            <li><a href="mailto:VSDoronina@gmail.com">VSDoronina@mail.com</a></li>
+        </ul>
+    </section>
+    <!--    project-->
+    <section>
+        <h2>Project</h2>
+        <p></p>
+
+
+    </section>
+</main>
+<footer></footer>
+
+
+</body>
+</html>
